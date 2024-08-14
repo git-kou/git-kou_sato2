@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>佐藤農園２（架空の農園サイト）</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+  <header>
+    <div class="header-flex">
+    <div class="header-logo"><h1>佐藤農園</h1></div>
+    <div class="btn han">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </div>
+    <nav class="nav">
+      <ul class="header-list">
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Accordion">Q and A</a></li>
+        <li><a href="#Form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="top"><h1>豊かな<br>自然を<br>味わうために</h1></div>
+    <section id="Gallery">
+      <h1>ギャラリー</h1>
+      <div class="ga-flex">
+        <div class="ga-left">
+          <img class="gazou active" src="img/gya1.jpg">
+          <img class="gazou" src="img/gya2.jpg">
+          <img class="gazou" src="img/gya3.jpg">
+          <img class="gazou" src="img/gya4.jpg">
+          <img class="gazou" src="img/gya5.jpg">
+          <img class="gazou" src="img/gya6.jpg">
+        </div>
+        <div class="ga-right">
+          <div class="ga-right-flex">
+          <img class="btn gazou-btn lite" src="img/gya1.jpg">
+          <img class="btn gazou-btn" src="img/gya2.jpg">
+          <img class="btn gazou-btn" src="img/gya3.jpg">
+          <img class="btn gazou-btn" src="img/gya4.jpg">
+          <img class="btn gazou-btn" src="img/gya5.jpg">
+          <img class="btn gazou-btn" src="img/gya6.jpg">
+          </div>
+          <div class="prev-next">
+            <button class="btn zengo mae hid">前へ</button>
+            <button class="btn zengo tugi">次へ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Accordion">
+      <h1>よくある質問</h1>
+      <div class="ako">
+        <div class="btn ques">
+          <p>Q.佐藤農園の本拠地はどこですか？</p>
+          <span>↓</span>
+        </div>
+        <div class="ans">
+          <p>A.愛知県長久手市になります。</p>
+        </div>
+      </div>
+      <div class="ako">
+        <div class="btn ques">
+          <p>Q.佐藤農園の野菜は農薬を使っていますか？</p>
+          <span>↓</span>
+        </div>
+        <div class="ans">
+          <p>A.はい、微量ではありますが使っています。とくにネギやキュウリには入れています。</p>
+        </div>
+      </div>
+      <div class="ako">
+        <div class="btn ques">
+          <p>Q.佐藤農園の野菜はどこで買えますか？</p>
+          <span>↓</span>
+        </div>
+        <div class="ans">
+          <p>A.長久手市のバローはもちろん、名古屋市名東区や守山区、豊田市の一部のバローでも販売しています。</p>
+        </div>
+      </div>
+      <div class="ako">
+        <div class="btn ques">
+          <p>Q.佐藤農園の特におすすめの野菜は何ですか？</p>
+          <span>↓</span>
+        </div>
+        <div class="ans">
+          <p>A.特におすすめはキュウリとトマトになります。他にもジャガイモやレタス、夏にはスイカもおすすめです。</p>
+        </div>
+      </div>
+    </section>
+    <section id="Form">
+      <h1>フォーム</h1>
+      <div class="kakaku">
+        <h2>※価格</h2>
+        <p>キュウリ（￥６０）<br>
+        トマト（￥７０）<br>
+        ナス（￥７０）<br>
+        ジャガイモ（￥８０）<br>
+        ネギ（￥１００）<br>
+        タマネギ（￥５０）<br>
+        レタス（￥６０）<br>
+        キャベツ（￥６０）<br>
+        ブドウ（￥１２０）<br>
+        リンゴ（￥１１０）<br>
+        スイカ（￥２００）</p>
+      </div>
+      <form class="form">
+        <p>※配送希望の野菜を入力してください。また、それぞれの野菜の必要個数を<span style="color:red;font-size:large">半角数字で</span>入力してください。(一度に4つまで可能)</p>
+      <div class="tyumon-flex">
+        <select class="select red">
+          <option class="none">注文なし</option>
+          <option>キュウリ</option>
+          <option>トマト</option>
+          <option>ナス</option>
+          <option>ジャガイモ</option>
+          <option>ネギ</option>
+          <option>タマネギ</option>
+          <option>レタス</option>
+          <option>キャベツ</option>
+          <option>ブドウ</option>
+          <option>リンゴ</option>
+          <option>スイカ</option>
+        </select>
+        <input class="input red">
+      </div>
+      <div class="tyumon-flex">
+        <select class="select blue">
+          <option class="none">注文なし</option>
+          <option>キュウリ</option>
+          <option>トマト</option>
+          <option>ナス</option>
+          <option>ジャガイモ</option>
+          <option>ネギ</option>
+          <option>タマネギ</option>
+          <option>レタス</option>
+          <option>キャベツ</option>
+          <option>ブドウ</option>
+          <option>リンゴ</option>
+          <option>スイカ</option>
+        </select>
+        <input class="input blue">
+      </div>
+      <div class="tyumon-flex">
+        <select class="select green">
+          <option class="none">注文なし</option>
+          <option>キュウリ</option>
+          <option>トマト</option>
+          <option>ナス</option>
+          <option>ジャガイモ</option>
+          <option>ネギ</option>
+          <option>タマネギ</option>
+          <option>レタス</option>
+          <option>キャベツ</option>
+          <option>ブドウ</option>
+          <option>リンゴ</option>
+          <option>スイカ</option>
+        </select>
+        <input class="input green">
+      </div>
+      <div class="tyumon-flex">
+        <select class="select yellow">
+          <option class="none">注文なし</option>
+          <option>キュウリ</option>
+          <option>トマト</option>
+          <option>ナス</option>
+          <option>ジャガイモ</option>
+          <option>ネギ</option>
+          <option>タマネギ</option>
+          <option>レタス</option>
+          <option>キャベツ</option>
+          <option>ブドウ</option>
+          <option>リンゴ</option>
+          <option>スイカ</option>
+        </select>
+        <input class="input yellow">
+      </div>
+        <p class="error" style="height:20px;color:red;text-align:center"></p>
+        <button type="submit" class="btn submit">注文票へ入力</button>
+      </form>
+      <table class="sousin" border="1">
+        <h2 style="text-align:center;margin-top:30px;">注文票</h2>
+        <tr class="sousin-tr">
+          <td class="name">
+          </td>
+          <td class="kosuu">
+          </td>
+          <td class="kingaku">
+          </td>
+        </tr>
+        <tr class="sousin-tr">
+          <td class="name">
+          </td>
+          <td class="kosuu">
+          </td>
+          <td class="kingaku">
+          </td>
+        </tr>
+        <tr class="sousin-tr">
+          <td class="name">
+          </td>
+          <td class="kosuu">
+          </td>
+          <td class="kingaku">
+          </td>
+        </tr>
+        <tr class="sousin-tr">
+          <td class="name">
+          </td>
+          <td class="kosuu">
+          </td>
+          <td class="kingaku">
+          </td>
+        </tr>
+        <tr class="sousin-tr">
+          <th class="name">
+            合計
+          </th>
+          <td class="kosukei">
+          </td>
+          <td class="kinkei">
+          </td>
+        </tr>
+      </table>
+      <form class="kakunin">
+        <p>この内容でよろしいですか？</p>
+        <div class="kakunin-flex">
+          <button class="btn kesu">やり直す</buttom>
+          <button type="submit" class="btn kettei">送信</buttom>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>2024©satou</p>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,376 @@
+      body {
+        margin:0;
+        background-image:url("img/back.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-color:rgba(255,255,255,0.8);
+        background-blend-mode:lighten;
+      }
+
+      a {
+        text-decoration: none;
+        color:white;
+      }
+
+      img {
+        max-width:100%;
+      }
+
+      ul {
+        list-style:none;
+        padding-left:0;
+        margin:0;
+      }
+
+      h1,h2,h3,h4 {
+        margin:0;
+      }
+
+      header {
+        background-color:#33CC66;
+        color:white;
+        font-family: 'Times New Roman', Times, serif;
+        position:fixed;
+        z-index:999;
+        width:100%;
+      }
+
+      .header-flex {
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+      }
+
+      .header-logo {
+        margin-left:20px;
+      }
+
+/* ハンバーガーメニュー */
+
+/* ハンバーガーメニューの線 */
+
+.han span {
+    height: 4px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    transition:0.3s;
+    display: block;
+  }
+  
+  .han span:nth-child(1) {
+    width:40px;
+    top: 0;
+  }
+  
+  .han span:nth-child(2) {
+    width:30px;
+    margin: 8px 10px;
+  }
+  
+  .han span:nth-child(3) {
+    width:20px;
+    top: 0;
+    margin:0 20px;
+  }
+  
+  
+  /* ハンバーガーメニュークリック後のスタイル */
+  .han.active {
+    transform: translateX(0);
+  }
+  
+  .han.active span:nth-child(1) {
+    top: 9px;
+    left:20px;
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+  
+  .han.active span:nth-child(2) {
+    opacity: 0;
+    background-color: white;
+  
+  }
+  
+  .han.active span:nth-child(3) {
+    top: -15px;
+    width:40px;
+    transform: rotate(45deg);
+    background-color: white;
+  }
+
+  .nav {
+    width:100%;
+    text-align:center;
+    display:none;
+  }
+
+  .nav li {
+    padding:10px 20px;
+    border-top:1px solid white;
+  }
+
+  .nav a {
+    display:block;
+  }
+
+  .top {
+    width:100%;
+    height:400px;
+    background-image:url("img/top.jpg");
+    background-size:cover;
+    background-position: top;
+    display:flex;
+    align-items:center;
+  }
+
+  .top h1 {
+    color:white;
+    margin-left:20px;
+    font-size:8vh;
+  }
+
+  @media(max-width:500px) {
+    .top h1 {
+      font-size:12vw;
+    }
+  }
+
+  section {
+    width:80%;
+    margin:0 auto;
+  }
+
+  section h1 {
+    text-align:center;
+    font-size:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top:30px;
+    margin-bottom:20px;
+  }
+
+  #Gallery,#Accordion,#Form {
+    padding-top:30px;
+  }
+
+  .btn {
+    cursor:pointer;
+  }
+
+  .ga-flex {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .ga-left {
+    width:45%;
+  }
+
+  .gazou {
+    width:100%;
+    display:none;
+  }
+
+  .active {
+    display:block;
+  }
+
+  .ga-right {
+    width:45%;
+  }
+
+  .ga-right-flex {
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-around;
+  }
+
+  .gazou-btn {
+    width:30%;
+  }
+
+  .prev-next {
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+  }
+
+  button:hover {
+    box-shadow:0px 0px 0px;
+    transform: translateY(3px);
+  }
+
+  .zengo {
+    background-color:#FF66FF;
+    border:1px solid #FF66FF;
+    color:white;
+    padding:3px 8px;
+    border-radius:10px;
+    box-shadow:0px 5px 0px #AA66AA;
+  }
+
+  .hid {
+    visibility: hidden;
+  }
+
+  @media(max-width:600px) {
+    .ga-flex {
+      flex-direction: column;
+    }
+
+    .ga-left {
+      width:90%;
+      margin:0 auto;
+    }
+
+    .ga-right {
+      width:90%;
+      margin:20px auto 0 auto; 
+    }
+
+    .ga-right-flex {
+      gap:5px;
+    }
+  }
+
+  .ako {
+    margin-bottom:10px;
+  }
+
+  .ques {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:orange;
+    padding:0 20px;
+    border-radius: 10px;
+    color:white;
+  }
+
+  .ans {
+    padding:1px 20px;
+    background-color:yellow;
+    border-radius:10px;
+    display:none;
+  }
+
+  .kakaku {
+    background-color:#CCFF66;
+    width:90%;
+    max-width:300px;
+    text-align:center;
+    margin: 0 auto;
+    padding:20px 3px 10px 3px;
+  }
+
+  .tyumon-flex {
+    display:flex;
+    justify-content: center;
+    margin-bottom:10px;
+  }
+
+  .tyumon-flex::after{
+    content:"個";
+  }
+
+  .select {
+    width:45%;
+    max-width:300px;
+    margin-right:5px;
+  }
+
+  .input {
+    width:40px;
+    text-align:right;
+    margin-left:5px;
+  }
+
+  .red{background-color:rgba(255, 194, 194, 1)}
+  .blue{background-color:rgba(173,194,256,1)}
+  .green{background-color:rgba(198,256,194,1)}
+  .yellow{background-color:rgba(253,256,194,1)}
+
+  .submit {
+    background-color:#33CC66;
+    color:white;
+    width:100px;
+    height:30px;
+    border:1px solid #33CC66;
+    border-radius: 5px;
+    display:block;
+    margin: 0 auto;
+    box-shadow: 0px 5px 0px #00AA00 ;
+  }
+
+  .sousin {
+    margin:15px auto ;
+    background-color:rgba(256, 256, 256, 0.8);
+    border-collapse: collapse;
+  }
+
+  td,th {
+    width:120px;
+    height:50px;
+    text-align:center;
+  }
+
+  .kakunin {
+    width:80%;
+    margin:20px auto;
+    text-align:center;
+    display:none;
+  }
+
+  .kakunin-active {
+    display:block;
+  }
+
+  .kakunin-flex {
+    display:flex;
+    justify-content: space-around;
+    width:60%;
+    margin:0 auto;
+  }
+
+  @media(max-width:600px) {
+    .kakunin-flex {
+      width:100%;
+    }
+  }
+
+  .kesu {
+    background-color:blue;
+    border:1px solid blue;
+    padding:5px;
+    color:white;
+    border-radius: 5px;
+    width:70px;
+    box-shadow: 0px 5px 0px #0000AA ;
+  }
+
+  .kettei {
+    background-color:orangered;
+    border:1px solid orangered;
+    padding:5px;
+    color:white;
+    border-radius: 5px;
+    width:70px;
+    box-shadow: 0px 5px 0px #AA0000 ;
+  }
+
+  footer {
+    background-color: #33CC66;
+  }
+
+  footer p {
+    margin:0;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:80%;
+  }
